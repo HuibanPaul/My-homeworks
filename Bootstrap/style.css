@@ -1,0 +1,43 @@
+
+.card {
+  text-align: center;
+  width: 25rem;
+  font-size: medium;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+p {
+  color: gray;
+}
+span {
+  color: gray;
+  padding-right: 10px;
+}
+.btn.btn-dark,
+.btn.btn-outline-dark {
+  font-weight: bolder;
+  border-radius: 0;
+  border-width: 2px;
+  font-size: smaller;
+  padding: 8px 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+i {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+img {
+  cursor: pointer;
+  border-radius: 0;
+}
+.card-title {
+  margin-top: 15px;
+}
+.card-text {
+  margin-top: 15px;
+}
