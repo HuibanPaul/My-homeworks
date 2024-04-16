@@ -1,68 +1,88 @@
-
 .nav-bar {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+}
+.navigation {
   display: flex;
-  justify-content: center;
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin-left: 0px;
+  margin-right: 35px;
+  gap: 15px;
 }
-.item {
-  height: 60px;
-  width: 175px;
-  margin: 10px;
+li {
   background-color: rgb(0, 113, 205);
+  width: 360px;
+  height: 60px;
+  padding: 0px;
   text-align: center;
+  color: white;
+  line-height: 330%;
   font-size: 20px;
-  -webkit-text-fill-color: white;
+  cursor: pointer;
 }
-
+li:hover {
+  background-color: skyblue;
+}
 .header {
   display: flex;
-  justify-content: center;
-  
+  margin-right: 0px;
+  margin-left: 40px;
 }
 .item1 {
   font-size: 35px;
   border-right: 2px solid grey;
   padding-right: 10px;
-  flex-shrink: 1;
 }
 .item2 {
-  padding-left: 5px;
+  padding-left: 10px;
   margin-top: 10px;
-  flex-shrink: 2;
 }
-.item3 {
-  margin-left: 380px;
-  font-size: 15px;
-  height: 10px;
-  width: 170px;
-  flex-shrink: 3;
+.contact {
+  position: absolute;
+  right: 50px;
+  width: 160px;
+  font-size: smaller;
+  top: 75px;
 }
-.BOX{display: flex;
-justify-content: center;
-position: relative;
+a {
+  color: gray;
+  text-decoration: none;
 }
-.box-1{background-color: skyblue;
-height: 300px;
-width: 950px;
-font-size: 100px;
-text-align: center;
-font-style: oblique;
--webkit-text-fill-color: white;
+a:hover {
+  color: red;
 }
-.box-2{
-position: absolute;
-background-color: rgb(0, 113, 205);
-height: 100px;
-width: 650px;
-bottom: -30px;
-right: 500px;
-font-size: 60px;
-text-align: center;
--webkit-text-fill-color: white;
+
+.BOX {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
-.box-3{
+.box-1 {
+  background-color: skyblue;
+  height: 300px;
+  width: 950px;
+  font-size: 100px;
+  text-align: center;
+  font-style: oblique;
+  -webkit-text-fill-color: white;
+}
+.box-2 {
   position: absolute;
   background-color: rgb(0, 113, 205);
-  text-align:center;
+  height: 100px;
+  width: 650px;
+  bottom: -30px;
+  right: 500px;
+  font-size: 60px;
+  text-align: center;
+  -webkit-text-fill-color: white;
+}
+.box-3 {
+  position: absolute;
+  background-color: rgb(0, 113, 205);
+  text-align: center;
   font-size: 10px;
   height: 140px;
   width: 260px;
@@ -70,7 +90,7 @@ text-align: center;
   left: 500px;
   top: 24px;
 }
-h2{
+h2 {
   border-bottom: 2px dotted white;
-font-weight: lighter;
+  font-weight: lighter;
 }
