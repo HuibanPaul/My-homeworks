@@ -88,7 +88,7 @@ a:hover {
   right: 60px;
   font-size: 80px;
   text-align: center;
-  -webkit-text-fill-color: white;
+  color: white;
 }
 .box-3 {
   position: absolute;
@@ -114,9 +114,11 @@ a:hover {
   top: 100px;
   gap: 30px;
   justify-content: space-evenly;
+  margin-bottom: 8%;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 .card {
- 
   width: 560px;
   height: 600px;
   background-color: lightgrey;
@@ -137,7 +139,6 @@ a:hover {
   padding-left: 20px;
 }
 .fakeimg {
-  
   background-color: rgb(60, 59, 59);
   width: 80%;
   height: 30%;
@@ -150,9 +151,108 @@ a:hover {
   margin-bottom: 40px;
   cursor: pointer;
 }
-.readmore{
+.readmore {
   text-align: end;
   margin-right: 20px;
   font-size: 30px;
- color:aliceblue
+}
+.read {
+  color: blue;
+  cursor: pointer;
+}
+.articles2 {
+  position: relative;
+  display: flex;
+  border-top: dashed grey 2px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.description {
+  width: 76%;
+  border-bottom: dotted grey 2px;
+  margin-bottom: 50px;
+}
+.description h2 {
+  border-bottom: dotted grey 1px;
+  margin-left: 20%;
+  font-size: 35px;
+}
+.description p {
+  font-size: 23px;
+}
+
+.fakeimg1 {
+  background-color: rgb(60, 59, 59);
+  width: 200px;
+  height: 160px;
+  margin-top: 40px;
+  margin-right: 20px;
+  border: solid white 5px;
+  outline: solid black 1px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  line-height: 150px;
+  float: left;
+  cursor: pointer;
+}
+.continuereading {
+  margin-left: 87%;
+  cursor: pointer;
+  color: blue;
+}
+.categories {
+  margin-left: 100px;
+  background-color: rgb(235, 235, 235);
+  height: 210px;
+  margin-top: 40px;
+  width: 35%;
+}
+.categories h2 {
+  font-size: 35px;
+  border-bottom: dashed grey 1px;
+  margin-top: 10px;
+  margin-left: 20px;
+  color: grey;
+}
+.links {
+  margin-left: -50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.link1 {
+  border-bottom: solid grey 1px;
+  color: blue;
+}
+.link2 {
+  border-bottom: solid grey 1px;
+  color: blue;
+}
+.link3 {
+  border-bottom: solid grey 1px;
+  color: blue;
+}
+.link4 {
+  border-bottom: solid grey 1px;
+  color: blue;
+}
+.link5 {
+  border-bottom: solid grey 1px;
+  color: blue;
+}
+.imagini {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pictures {
+  background-color: rgb(60, 59, 59);
+  width: 300px;
+  height: 200px;
+  border: solid white 5px;
+  outline: solid black 1px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  line-height: 200px;
+  cursor: pointer;
 }
