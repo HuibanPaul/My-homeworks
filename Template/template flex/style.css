@@ -93,7 +93,8 @@ a:hover {
 .box-3 {
   position: absolute;
   background-color: rgb(0, 113, 205);
-  text-align: center;
+  text-align: start;
+  padding-left: 10px;
   font-size: 15px;
   height: 170px;
   width: 350px;
@@ -112,11 +113,11 @@ a:hover {
   display: flex;
   position: relative;
   top: 100px;
-  gap: 30px;
+  gap: 20px;
   justify-content: space-evenly;
   margin-bottom: 8%;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .card {
   width: 560px;
@@ -164,8 +165,8 @@ a:hover {
   position: relative;
   display: flex;
   border-top: dashed grey 2px;
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 .description {
   width: 76%;
@@ -244,9 +245,10 @@ a:hover {
   display: flex;
   justify-content: space-evenly;
 }
+
 .pictures {
   background-color: rgb(60, 59, 59);
-  width: 300px;
+  width: 315px;
   height: 200px;
   border: solid white 5px;
   outline: solid black 1px;
@@ -255,4 +257,24 @@ a:hover {
   text-align: center;
   line-height: 200px;
   cursor: pointer;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 113, 205);
+  margin-top: 20px;
+  margin-left: 43px;
+  padding-right: 105px;
+  width: 90%;
+  color: white;
+}
+.copyright {
+  color: white;
+  margin-top: 15px;
+  margin-left: 20px;
+
+  cursor: pointer;
+}
+.copyright:hover {
+  color: skyblue;
 }
