@@ -1,12 +1,26 @@
-const nums = [1, 3, 6, 1, 7, 3, 2, 1, 6, 1, 7, 1];
+// Compute how many times a certain element appears in an array
 
+const names = [
+  "Ioana",
+  "Maria",
+  "Andreea",
+  "Ioana",
+  "Ramona",
+  "Georgiana",
+  "Roxana",
+  "Ioana",
+  "Andreea",
+  "Maria",
+  "Ioana",
+  "Roxana",
+];
 const count = {};
 
-for (let ele of nums) {
-  if (count[ele]) {
-    count[ele] += 1;
+for (const name of names) {
+  if (name in count) {
+    count[name] += 1;
   } else {
-    count[ele] = 1;
+    count[name] = 1;
   }
 }
 

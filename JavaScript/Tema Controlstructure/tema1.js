@@ -1,3 +1,5 @@
-for (var input = 1; input <= 20; input++) {
-  console.log(input);
+// Display in the console the numbers from 1 to 20
+
+for (let i = 1; i <= 20; i++) {
+  console.log(i);
 }
