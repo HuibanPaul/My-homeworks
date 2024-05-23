@@ -1,0 +1,68 @@
+.banner {
+  background-color: lightgreen;
+  max-width: 850px;
+  margin: 0 auto;
+  height: 40px;
+visibility: hidden;
+}
+.bannercontent {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.material-icons {
+  color: green;
+}
+.bannerclose {
+  margin-left: 550px;
+  border: none;
+  background-color: lightgreen;
+  cursor: pointer;
+}
+.bannertext {
+  color: green;
+}
+form {
+  width: 700px;
+  height: 350px;
+  border: 2px solid black;
+  padding: 70px;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+.control {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mytext {
+  width: 31em;
+}
+.gender {
+  display: inline-block;
+  margin-left: 70px;
+}
+.textarea {
+  margin-top: 20px;
+}
+.button {
+  margin-top: 20px;
+  margin-left: 355px;
+  height: 35px;
+  width: 70px;
+  background-color: skyblue;
+  color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: aqua;
+}
+.image {
+  position: absolute;
+  top: 180px;
+  margin-left: 450px;
+  cursor: pointer;
+}

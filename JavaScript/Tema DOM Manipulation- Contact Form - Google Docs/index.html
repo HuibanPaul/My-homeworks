@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>DOM Manipulation</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    
+    <div class="banner" id="banner">
+      <div class="bannercontent">
+        <span class="material-icons"> check_circle </span>
+        <div class="bannertext">Thank you for contacting us,</div>
+        <button class="bannerclose" type="button" id="bannerclose">
+          <span class="material-icons"> close </span>
+        </button>
+      </div>
+    </div>
+    <form>
+      <div class="control">
+        <input
+          type="text"
+          placeholder="First Name"
+          class="mytext"
+          id="firstname"
+          required
+        />
+      </div>
+      <div class="control">
+        <input
+          type="text"
+          placeholder="Last Name"
+          class="mytext"
+          id="lastname"
+          required
+        />
+      </div>
+      <span>Gender</span>
+      <div>
+        <input type="radio" id="masculin" class="gender" />
+        <label for="masculin">M</label>
+      </div>
+      <div>
+        <input type="radio" id="feminin" class="gender" />
+        <label for="feminin">F</label>
+      </div>
+      <div class="textarea">
+        <textarea id="message" name="message" rows="10" cols="50">
+Your message here....</textarea
+        >
+        <br />
+      </div>
+      <div>
+        <input type="submit" value="Submit" class="button" id="submit" />
+      </div>
+      <div class="image">
+        <img src="https://dummyimage.com/300x380" alt="Dummy Image" />
+      </div>
+    </form>
+  </body>
+</html>
