@@ -9,6 +9,10 @@ let computerChoice = function () {
 let winner = function (computerChoice, playerChoice) {
   console.log(playerChoice);
   console.log(computerChoice);
+  let playerChoiceinput = document.getElementById("player-choice");
+  let computerChoiceinput = document.getElementById("computer-choice");
+  playerChoiceinput.value = playerChoice;
+  computerChoiceinput.value = computerChoice;
   if (
     (computerChoice === "Rock" && playerChoice === "Paper") ||
     (computerChoice === "Scissors" && playerChoice === "Rock") ||
@@ -28,5 +32,23 @@ let winner = function (computerChoice, playerChoice) {
 butoane.forEach((buton) => {
   buton.addEventListener("click", function () {
     winner(computerChoice(), this.id);
+    console.log(roundWinner);
+    let computerWins =
+      roundWinner.filter((round) => round === "Computer").length === 3;
+    let playerWins =
+      roundWinner.filter((round) => round === "Player").length === 3;
+
+    let tabelaDeScor = document.getElementById("scoretable");
+
+    if (computerWins) {
+      tabelaDeScor.innerText = "Calculatorul castiga!";
+      console.log("Calculatorul castiga!");
+      roundWinner = [];
+    }
+    if (playerWins) {
+      tabelaDeScor.innerText = "Jucatorul castiga!";
+      console.log("Jucatorul castiga!");
+      roundWinner = [];
+    }
   });
 });
