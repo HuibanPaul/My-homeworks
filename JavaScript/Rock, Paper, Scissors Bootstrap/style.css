@@ -1,3 +1,17 @@
 body {
-    background-color: aquamarine;
+  background-color: aliceblue;
+}
+#score a {
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+  text-decoration: none;
+  border-style: solid;
+}
+#score h5 {
+  font-size: 30px;
+  color: rebeccapurple;
+}
+.card-body {
+  background-color: lightblue;
 }

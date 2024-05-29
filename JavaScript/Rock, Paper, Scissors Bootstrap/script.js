@@ -1,11 +1,21 @@
 let roundWinner = [];
 let butoane = document.querySelectorAll("button");
 console.log(butoane);
+let tabelaDeScor = document.getElementById("scoretable");
+let pc = document.getElementById("pc");
+let user = document.getElementById("user");
 
 let computerChoice = function () {
   const variantePosibile = ["Rock", "Paper", "Scissors"];
   return variantePosibile[Math.floor(Math.random() * variantePosibile.length)];
 };
+let reset = () => {
+  roundWinner = [];
+  tabelaDeScor.innerText = "Let the game begin!";
+  pc.innerText = 0;
+  user.innerText = 0;
+};
+
 let winner = function (computerChoice, playerChoice) {
   console.log(playerChoice);
   console.log(computerChoice);
@@ -31,24 +41,33 @@ let winner = function (computerChoice, playerChoice) {
 };
 butoane.forEach((buton) => {
   buton.addEventListener("click", function () {
+    if (this.id === "reset") {
+      return reset();
+    }
     winner(computerChoice(), this.id);
     console.log(roundWinner);
     let computerWins =
       roundWinner.filter((round) => round === "Computer").length === 3;
+    let computerWinsNr = roundWinner.filter(
+      (round) => round === "Computer"
+    ).length;
     let playerWins =
       roundWinner.filter((round) => round === "Player").length === 3;
-
-    let tabelaDeScor = document.getElementById("scoretable");
+    let playerWinsNr = roundWinner.filter((round) => round === "Player").length;
 
     if (computerWins) {
       tabelaDeScor.innerText = "Calculatorul castiga!";
+
       console.log("Calculatorul castiga!");
       roundWinner = [];
     }
     if (playerWins) {
       tabelaDeScor.innerText = "Jucatorul castiga!";
+
       console.log("Jucatorul castiga!");
       roundWinner = [];
     }
+    pc.innerText = computerWinsNr;
+    user.innerText = playerWinsNr;
   });
 });
