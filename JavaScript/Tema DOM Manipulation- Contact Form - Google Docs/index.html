@@ -15,7 +15,7 @@
     <div class="banner" id="banner">
       <div class="bannercontent">
         <span class="material-icons"> check_circle </span>
-        <div class="bannertext">Thank you for contacting us,</div>
+        <div id="text" class="bannertext"></div>
         <button class="bannerclose" type="button" id="bannerclose">
           <span class="material-icons"> close </span>
         </button>
@@ -42,17 +42,21 @@
       </div>
       <span>Gender</span>
       <div>
-        <input type="radio" id="masculin" class="gender" />
+        <input type="radio" id="masculin" name="gender" required />
         <label for="masculin">M</label>
       </div>
       <div>
-        <input type="radio" id="feminin" class="gender" />
+        <input type="radio" id="feminin" name="gender" required />
         <label for="feminin">F</label>
       </div>
       <div class="textarea">
-        <textarea id="message" name="message" rows="10" cols="50">
-Your message here....</textarea
-        >
+        <textarea
+          id="message"
+          name="message"
+          rows="10"
+          cols="50"
+          placeholder="Your message here...."
+        ></textarea>
         <br />
       </div>
       <div>

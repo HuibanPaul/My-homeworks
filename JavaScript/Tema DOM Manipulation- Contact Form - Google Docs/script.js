@@ -5,6 +5,8 @@ function validate() {
   const firstName = document.getElementById("firstname");
   const lastName = document.getElementById("lastname");
   const showBanner = document.getElementById("banner");
+  const bannerText = document.getElementById("text");
+
   if (firstName.value == "") {
     firstName.style.border = "3px solid Red";
   }
@@ -14,5 +16,10 @@ function validate() {
   } else {
     showBanner.style.visibility = "visible";
   }
+  const bannerClose = document.getElementById("bannerclose");
+  bannerClose.onclick = () => {
+    showBanner.style.display = "none";
+  };
+  bannerText.innerHTML = "Thank you for contacting us, " + firstName.value;
 }
 console.log(validate);
